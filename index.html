@@ -3,19 +3,16 @@
 <head>
 	<meta name = "viewport" content = "user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
 	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-	<link rel="apple-touch-icon" href="images/icon.png"/>
-	<link rel="icon" type="image/png" href="images/icon.png" />
-	<link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: portrait)" href="images/splash_iPad_portrait.png" />
-	<link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: landscape)" href="images/splash_iPad_landscape.png" />
+
+
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 	<title>Gomoku</title>
 
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
-	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<link rel="stylesheet" href="jquery.mobile-1.2.0.min.css" />
+	<script src="jquery-1.8.2.min.js"></script>
+	<script src="jquery.mobile-1.2.0.min.js"></script>
 
 	<link rel="stylesheet" href="style/w.min.css" />
 	<link rel='stylesheet' href='style/style.css' type='text/css'/>
@@ -38,7 +35,7 @@
 	<div data-role='content' class='center no-padding'>
 		<div id='game-region'>
 			<header class='game-ult'>Gomoku</header>
-			<div id='game-info' class='game-ult ui-bar'>
+			<div id='game-info' class='game-ult ui-bar ui-bar-e'>
 				<span class='go black'></span>
 				<span class='cont'>Your turn.</span>
 			</div>
@@ -123,10 +120,10 @@
 
 <div data-role='dialog' data-theme='e' id='help-page'>
 	<div data-role='header'>
-		<h4>About</h4>
+		<h4>Game rule</h4>
 	</div>
 	<div data-role='content' class='thin-content'>
-		<p>about adding later</p>
+		<p>The game is played on a square board. Each player has one symbol assigned - a circle or a cross. The players take turns to place their assigned symbol on a position on the board. The goal of the game is to make a horizontal, a vertical or an oblique pentad of the same symbols. A pentad is simply 5 symbols in a row. The pentad must not be interrupted by opponent's symbol. Whoever makes the pentad first is the winner.</p>
 	</div>
 </div>
 </body>

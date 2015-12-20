@@ -117,4 +117,3 @@ AIPlayer.prototype.move = function(){
         });
     }
 };
-
